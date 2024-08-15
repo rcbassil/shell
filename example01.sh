@@ -87,7 +87,7 @@ done
 
 # Special and Positional parameters
 
-export IFS='-'
+export IFS=$'\n'
 
 # Printing the data available in $*
 # $* within a pair of double quotes is equivalent to the list of positional parameters, 
@@ -96,7 +96,7 @@ export IFS='-'
 echo "Values of \"\$*\":"
 for arg in "$*"
 do
-  echo "Args= $arg"
+  echo "$arg"
 done
 
 cnt=1
